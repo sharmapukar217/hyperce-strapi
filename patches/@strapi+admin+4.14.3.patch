@@ -54,19 +54,36 @@ index 10c5073..b3f23a2 100644
      >
        <RBACProvider permissions={permissions} refetchPermissions={refetch}>
 diff --git a/node_modules/@strapi/admin/admin/src/components/GlobalStyle/index.js b/node_modules/@strapi/admin/admin/src/components/GlobalStyle/index.js
-index 8813621..0b7b281 100644
+index 8813621..125d67c 100644
 --- a/node_modules/@strapi/admin/admin/src/components/GlobalStyle/index.js
 +++ b/node_modules/@strapi/admin/admin/src/components/GlobalStyle/index.js
-@@ -4,6 +4,9 @@ const GlobalStyle = createGlobalStyle`
-   body {
+@@ -5,5 +5,5 @@ const GlobalStyle = createGlobalStyle`
      background: ${({ theme }) => theme.colors.neutral100};
    }
-+  li > a[href="/admin/marketplace"] li {
-+    display: none;
-+  }  
  `;
- 
+-
++``
  export default GlobalStyle;
+diff --git a/node_modules/@strapi/admin/admin/src/hooks/useMenu/index.js b/node_modules/@strapi/admin/admin/src/hooks/useMenu/index.js
+index 34d1766..829962e 100644
+--- a/node_modules/@strapi/admin/admin/src/hooks/useMenu/index.js
++++ b/node_modules/@strapi/admin/admin/src/hooks/useMenu/index.js
+@@ -25,15 +25,6 @@ const useMenu = () => {
+         to: '/list-plugins',
+         permissions: permissions.marketplace.main,
+       },
+-      {
+-        icon: ShoppingCart,
+-        intlLabel: {
+-          id: 'global.marketplace',
+-          defaultMessage: 'Marketplace',
+-        },
+-        to: '/marketplace',
+-        permissions: permissions.marketplace.main,
+-      },
+       {
+         icon: Cog,
+         intlLabel: {
 diff --git a/node_modules/@strapi/admin/admin/src/pages/Admin/index.js b/node_modules/@strapi/admin/admin/src/pages/Admin/index.js
 index de3f0d8..3adca4d 100644
 --- a/node_modules/@strapi/admin/admin/src/pages/Admin/index.js
