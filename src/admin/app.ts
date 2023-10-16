@@ -1,6 +1,6 @@
 import favicon from "./extensions/favicon.png";
 
-const colors =  {
+const colors = {
   // primary colors
   primary100: "#DAF9F4",
   primary200: "#B7F3EE",
@@ -14,7 +14,7 @@ const colors =  {
   secondary500: "#FFDE00",
   secondary600: "#DBBB00",
   secondary700: "#B79A00",
-}
+};
 
 export default {
   config: {
@@ -32,14 +32,18 @@ export default {
     translations: {
       en: {
         // email plugin
-        // "email.Settings.email.plugin.placeholder.defaultFrom": "ex: Hyperce No-Reply '<'no-reply@hyperce.io'>'",
-        // "email.Settings.email.plugin.placeholder.defaultReplyTo": "ex: Hyperce '<'example@hyperce.io'>'",
-        "Settings.email.plugin.placeholder.defaultFrom": "ex: Hyperce No-Reply <no-reply@hyperce.io>",
-        "Settings.email.plugin.placeholder.defaultReplyTo": "ex: Hyperce <example@hyperce.io>",
-        "Settings.email.plugin.placeholder.testAddress": "ex: developer@example.com",
-        
+        "email.plugin.placeholder.defaultFrom": "ex: Hyperce No-Reply '<'no-reply@hyperce.io'>'",
+        "email.plugin.placeholder.defaultReplyTo": "ex: Hyperce '<'example@hyperce.io'>'",
+        // "Settings.email.plugin.placeholder.defaultFrom":
+        //  "ex: Hyperce No-Reply <no-reply@hyperce.io>",
+        // "Settings.email.plugin.placeholder.defaultReplyTo":
+        //  "ex: Hyperce <example@hyperce.io>",
+        // "Settings.email.plugin.placeholder.testAddress":
+        //  "ex: developer@example.com",
+
         // content manager
-        "notification.info.autoreaload-disable": "Admin is in production mode, editing content types is disabled. Please switch to development mode by starting your server with `yarn develop`.",
+        "notification.info.autoreaload-disable":
+          "Admin is in production mode, editing content types is disabled. Please switch to development mode by starting your server with `yarn develop`.",
 
         // app
         "app.components.BlockLink.blog": "",
