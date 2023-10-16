@@ -48,7 +48,7 @@ index df66bb1..fa69c1d 100644
 -                          id: 'email.Settings.email.plugin.placeholder.defaultReplyTo',
 -                          defaultMessage: `ex: Strapi '<'example@strapi.io'>'`,
 -                        })}
-+			placeholder="ex: Hyperce '<'example@hyperce.io'>'"
++			placeholder="ex: Hyperce <example@hyperce.io>"
                          disabled
                          onChange={() => {}}
                          value={data.settings.defaultReplyTo}
